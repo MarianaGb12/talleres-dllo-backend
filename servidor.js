@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 
-const taller1 = require("./taller1");
-const taller2 = require("./taller-02");
-const taller3 = require("./taller-03");
+const taller1 = require("./src/taller1");
+const taller2 = require("./src/taller-02");
+const taller3 = require("./src/taller-03");
 
 const app = express();
 app.use(cors());
