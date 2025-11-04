@@ -1,28 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 
-const taller1 = require("./src/taller1");
-const taller2 = require("./src/taller-02");
-const taller3 = require("./src/taller-03");
-
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-app.get("/api/taller1", (req, res) => {
-  const resultado = taller1.ejecutar(); 
-  res.json({ resultado });
-});
-
-app.get("/api/taller2", (req, res) => {
-  const resultado = taller2.ejecutar();
-  res.json({ resultado });
-});
-
-app.get("/api/taller3", (req, res) => {
-  const resultado = taller3.ejecutar();
-  res.json({ resultado });
-});
+app.use('/api/taller1', require('./src/routes/taller1.routes'));
+app.use('/api/taller2', require('./src/routes/taller2.routes'));
+app.use('/api/taller3', require('./src/routes/taller3.routes'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor API en puerto ${PORT}`));
