@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { desglosarString, twoSum, conversionRomana, descomposicion } = require('../taller-03');
+const { desglosarString, twoSum, conversionRomana, descomposicion } = require('../talleres/taller-03');
 
 router.post('/desglosarString', (req, res) => {
   const { string, tipo } = req.body;

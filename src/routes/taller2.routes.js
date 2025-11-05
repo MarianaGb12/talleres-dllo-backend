@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { findMax, includes, sum, missingNumbers } = require('../taller-02');
+const { findMax, includes, sum, missingNumbers } = require('../talleres/taller-02');
 
 router.post('/findMax', (req, res) => {
   const { list } = req.body;

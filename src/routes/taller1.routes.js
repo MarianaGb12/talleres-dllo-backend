@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { convertidorTemp, resolvedor, mejorParidad, peorParidad } = require('../taller1');
+const { convertidorTemp, resolvedor, mejorParidad, peorParidad } = require('../talleres/taller1');
 
 router.post('/convertidorTemp', (req, res) => {
   const { celsius } = req.body;
