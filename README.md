@@ -27,7 +27,7 @@ src/
 > npm install
 
 # Ejecutar el servidor
-> npm run dev
+> node servidor.js
 
 ## Endpoints Disponibles
 
