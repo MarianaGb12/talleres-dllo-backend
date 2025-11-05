@@ -26,7 +26,7 @@ src/
 # Install dependencies
 > npm install
 
-#Ejecutar el servidor
+# Ejecutar el servidor
 > npm run dev
 
 ## Endpoints Disponibles
@@ -34,8 +34,8 @@ src/
 ### Taller 1
 - `POST /api/taller1/convertidorTemp` - Ej body {"celsius": 25}
 - `POST /api/taller1/resolvedor` - Ej body { "a": 1, "b": -3, "c": 2, "signo": "+" }
-- `POST /api/talle1/mejorParidad` - Ej body { "n": 15 }
-- `POST /api/talle1/peorParidad` - Ej body { "n": 15 }
+- `POST /api/taller1/mejorParidad` - Ej body { "n": 15 }
+- `POST /api/taller1/peorParidad` - Ej body { "n": 15 }
   
 ### Taller 2
 - `POST /api/taller2/findMax` - Ej body { "list": [1, 5, 3, 9, 2] }
